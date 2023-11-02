@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2"
+  ],
+  "env": {
+    "dev": {
+      //让项目过大的时候编译速度变快
+      "plugins": ["dynamic-import-webpack"]
+    }
+  },
+  "plugins": ["transform-runtime"],
+  "comments": false
+}
